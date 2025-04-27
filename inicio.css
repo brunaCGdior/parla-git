@@ -1,0 +1,140 @@
+
+
+/* Centralizando a área principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+
+/* Seção de introdução */
+/* Ajustes para a seção de introdução */
+.intro {
+ 
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+.intro h1 {
+    color: #F4A460;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 400px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+
+}
+
+.intro p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: 600px;
+    font-family: 'Times New Roman', serif; /* Deixa mais parecido com a imagem */
+}
+
+.btn.iniciar {
+    background-color: #E67E22;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 900px;
+}
+
+.btn.iniciar:hover {
+    background-color: #D35400;
+}
+
+
+.intro img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+
+
+/* Seção das fases */
+.fases {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fases h2 {
+    color: #e8a04b;
+    font-size: 28px;
+}
+
+.fases p {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+}
+
+/* Cartões das fases */
+.fases-container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: wrap; /* Permite quebrar linha se necessário */
+    gap: 20px; /* Espaço entre os itens */
+    max-width: 1000px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.fase {
+    width: 300px; /* Ajuste o tamanho para caber na linha */
+    flex-shrink: 0; /* Evita que os cartões diminuam além desse tamanho */
+    border-radius: 10px;
+
+}
+
+.fase h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.fase p {
+    font-size: 16px;
+}
+
+/* Cores específicas para cada fase */
+.fase1 {
+    background: linear-gradient(to bottom, #6cc6cf, #a8e0e5);
+}
+
+.fase2 {
+    background: linear-gradient(to bottom, #d48cc3, #f1c8e4);
+}
+
+.fase3 {
+    background: linear-gradient(to bottom, #e2c089, #f3dfbb);
+}
+
+.fase-extra {
+    background: linear-gradient(to bottom, #8aaf7b, #c2e1b9);
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro img {
+        margin-bottom: 20px;
+    }
+
+    .fases-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

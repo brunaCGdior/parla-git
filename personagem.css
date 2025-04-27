@@ -1,0 +1,549 @@
+
+
+
+body{
+    background-color: #edf5d4;
+}
+.header-area .main-nav .menu-trigger {
+    cursor: pointer;
+    position: absolute;
+    top: 33px;
+    width: 20px;
+    height: 40px;
+    text-indent: -9999em;
+    z-index: 99;
+    right: 20px;
+    display: none;
+  }
+  
+  .main-nav .menu-trigger {
+    top: 22px;
+  }
+  
+  .main-nav ul.nav {
+    margin-top: 20px;
+  }
+  
+  .main-nav .menu-trigger span {
+    top: 16px;
+  }
+  
+  .main-nav .menu-trigger span:before {
+    transform-origin: 33% 100%;
+    top: -10px;
+    z-index: 10;
+  }
+  
+  .main-nav .menu-trigger span:after {
+    transform-origin: 33% 0;
+    top: 10px;
+  }
+  
+  .main-nav .menu-trigger.active span,
+  .main-nav .menu-trigger.active span:before,
+  .main-nav .menu-trigger.active span:after {
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  .main-nav .menu-trigger.active span:before {
+    transform: translateY(6px) translateX(1px) rotate(45deg);
+    background-color: #fff;
+  }
+  
+  .main-nav .menu-trigger.active span:after {
+    transform: translateY(-6px) translateX(1px) rotate(-45deg);
+    background-color: #fff;
+  }
+  
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.background-header .logo img {
+    max-width: 110px;
+}
+
+.header-area {
+    position: absolute;
+    background-color: transparent;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: all .5s ease 0s;
+}
+.header-area {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #12270b; 
+    transition: top 0.3s; 
+    border-radius: 10px;
+}
+
+
+.header-area .main-nav {
+    background: transparent;
+    display: flex;
+}
+
+.header-area .main-nav .nav li a {
+    display: block;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #fff;
+    transition: all 0.4s ease 0s;
+    border: transparent;
+    letter-spacing: .25px;
+}
+.header-area .main-nav .nav li {
+    display: inline-block;
+    margin-right: 20px;  
+}
+
+
+.header-area .main-nav .nav li:last-child a {
+    background-color: #e7ee62;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-area .main-nav .nav li:hover a {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.header-area .main-nav .nav li a.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.page-heading {
+    background-image: url(footer2.jpeg);
+    border-radius: 0 0 110px 110px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0 40px;
+    text-align: center;
+    border-bottom: 10px;
+}
+
+.page-heading-audio {
+   
+    border-radius: 0 0 110px 110px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0 40px;
+    text-align: center;
+    border-bottom: 10px;
+}
+
+div, footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.page-heading h1 {
+    font-size: 5em; 
+    font-weight: bold;
+    color: #edf5d4; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    text-transform: uppercase; 
+    letter-spacing: 5px;
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+
+.offset-lg-0 {
+    margin-left: 0;
+}
+
+
+footer {
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #083f07;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(footer.jpeg);
+    min-height: 150px;
+    border-radius: 100px 100px 0 0;
+}
+
+
+footer p {
+    text-align: center;
+    line-height: 90px; 
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+footer p a {
+    color: #fff;
+    transition: all .3s;
+    position: relative;
+    z-index: 3;
+}
+
+
+footer p a:hover {
+    opacity: 0.90;
+}
+
+
+.button-container {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column1,
+.column2 {
+    display: flex;
+    flex-direction: column;
+}
+.column1{
+    margin-right: 10px;
+
+}
+.column2{
+    margin-top: 20px;
+    margin-left: 625px;
+    
+
+}
+
+.gacha-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.gacha-button1 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffdfc4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button2 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #eacba8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button3 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f7e2ab;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button4 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #dcb991;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button5 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0c08a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button6 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e7bc91;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button7 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ecbf83;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button8 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #cf9e7c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button9 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ac8b64;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button10 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #94613c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button11 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #b26a49;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button12 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ae703a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button13 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #99664d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button14 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #623a18;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gacha-button15 {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3f2818;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.column1 .gacha-button:not(:last-child) {
+    margin-bottom: 1px;
+}
+
+.column2 .gacha-button:not(:first-child) {
+    margin-top: 1px;
+}
+
+#result-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Adicione esta regra para as imagens dentro de #result-container */
+#result-container img {
+    max-width: 300%; 
+    display: block; 
+    margin: 0 auto; 
+    max-height: 200px; 
+    position: absolute;
+    left: 45%;
+    top: 80%;
+}
+.hidden {
+    display: none;
+}
+
+.fade {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.button-column {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #2776174b;
+    border-radius: 10px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-area .main-nav .nav li {
+        margin: 0 5px; /* Reduz a margem em telas menores */
+    }
+
+    .button-container {
+        flex-direction: column; /* Muda a direção das colunas para vertical em telas menores */
+        align-items: center; /* Centraliza as colunas */
+    }
+
+    .column1, .column2 {
+        min-width: 100%; /* As colunas ocupam 100% da largura em telas menores */
+    }
+
+    .header-area .main-nav .nav li a {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-area .main-nav .nav li {
+        margin: 0 3px; /* Reduz ainda mais a margem em telas muito pequenas */
+    }
+
+    .header-area .main-nav .nav li a {
+        font-size: 12px; /* Reduz o tamanho da fonte em telas muito pequenas */
+    }
+
+    .page-heading h1 {
+        font-size: 2.5em; /* Reduz o tamanho do título em telas muito pequenas */
+    }
+
+    .gacha-button {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos botões em telas pequenas */
+        padding: 8px 12px; /* Ajusta o padding dos botões */
+    }
+}
+
+
+.botoes-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 20px; /* Define o espaçamento lateral entre os botões */
+}
+
+.botao {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2776174b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+
+        .botao:hover {
+            background-color: #e8b462;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
